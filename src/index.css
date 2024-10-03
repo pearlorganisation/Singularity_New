@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+
+h1{
+  font-family: Poppins;
+}
+
+.box_shadow{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.login-option {
+    position: relative;
+  }
+  
+  .login-option::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    width: 150px;
+    height: 2px;
+    right: 7.5rem;
+    background-color: rgb(19, 19, 19, 0.6);
+  }
+  .login-option::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 7.5rem;
+    width: 150px;
+    height: 2px;
+    background-color: rgb(19, 19, 19, 0.6);
+  }
+  @media screen and (max-width: 575.98px) {
+    .login-option::before {
+      content: "";
+      width: 80px;
+      right: 6rem;
+    }
+    .login-option::after {
+      content: "";
+      width: 80px;
+      left: 6rem;
+    }
+  }
+  
+  
+  
+/* hamburger css */
+.hamburger {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible; }
+  .hamburger:hover {
+    opacity: 0.7; }
+  .hamburger.is-active:hover {
+    opacity: 0.7; }
+  .hamburger.is-active .hamburger-inner,
+  .hamburger.is-active .hamburger-inner::before,
+  .hamburger.is-active .hamburger-inner::after {
+    background-color: black; }
+
+.hamburger-box {
+  width: 30px;
+  height: 12px;
+  display: inline-block;
+  position: relative; }
+
+.hamburger--spin {
+  .hamburger-inner {
+    transition-duration: 0.22s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+
+    &::before {
+      transition: top 0.1s 0.25s ease-in,
+                  opacity 0.1s ease-in;
+    }
+
+    &::after {
+      transition: bottom 0.1s 0.25s ease-in,
+                  transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+  }
+
+  &.is-active {
+    .hamburger-inner {
+      transform: rotate(225deg);
+      transition-delay: 0.12s;
+      transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+
+      &::before {
+        top: 0;
+        opacity: 0;
+        transition: top 0.1s ease-out,
+                    opacity 0.1s 0.12s ease-out;
+      }
+
+      &::after {
+        bottom: 0;
+        transform: rotate(-90deg);
+        transition: bottom 0.1s ease-out,
+                    transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+      }
+    }
+  }
+}
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -0px; }
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease; }
+  .hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block; }
+  .hamburger-inner::before {
+    top: -10px; }
+  .hamburger-inner::after {
+    bottom: -10px; }
+
+/* home page 5 css */
+.Horizontal-line {
+  position: relative;
+}
+.Horizontal-line::after {
+  content: "";
+  position: absolute;
+  top: 70%;
+  z-index: 10;
+  left: 40%;
+  height: 3px;
+  width: 50%;
+  background-image: linear-gradient(to left, #996ce6, #0b4bbc);
+}
+@media screen and (max-width: 1024.98px) {
+  .Horizontal-line::after {
+    left: 50%;
+  }
+}
+@media screen and (max-width: 768.98px) {
+  .Horizontal-line::after {
+    left: 30%;
+  }
+}
+@media screen and (max-width: 525.98px) {
+  .Horizontal-line::after {
+    left: 42%;
+  }
+}
+@media screen and (max-width: 400.98px) {
+  .Horizontal-line::after {
+    left: 45%;
+  }
+}
+/* swiper */
+.clinet .swiper-pagination-bullet-active {
+	color:#fff;
+	background: #007aff;
+}
+.clinet .swiper-pagination-bullet{
+  width: 390px;
+  height: 50px;
+  background: rgba(0,0,0,0.7);
+  border-radius: 50px;
+}
+
+/* glitch effect */
+.glitch-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #000000;
+}
+
+.glitch {
+  position: relative;
+  font-size: 50px;
+  font-weight: bold;
+  color: #FFFFFF;
+  letter-spacing: 3px;
+  z-index: 1;
+}
+
+.glitch:before,
+.glitch:after {
+  display: block;
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+}
+
+.glitch:before {
+  animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  color: #00FFFF;
+  z-index: -1;
+}
+
+.glitch:after {
+  animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+  color: #FF00FF;
+  z-index: -2;
+}
+
+@keyframes glitch-it {
+  0% {
+     transform: translate(0);
+  }
+  20% {
+     transform: translate(-2px, 2px);
+  }
+  40% {
+     transform: translate(-2px, -2px);
+  }
+  60% {
+     transform: translate(2px, 2px);
+  }
+  80% {
+     transform: translate(2px, -2px);
+  }
+  to {
+     transform: translate(0);
+  }
+}
