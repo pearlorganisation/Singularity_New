@@ -36,6 +36,8 @@ import BlogDetails3P from "./pages/Procurement/BlogDetails3P";
 import BlogDetails1S from "./pages/Sciences_Ai/BlogDetails1S";
 import BlogDetails2S from "./pages/Sciences_Ai/BlogDetails2S";
 import BlogDetails3S from "./pages/Sciences_Ai/BlogDetails3S";
+import BlogDetails4S from "./pages/Sciences_Ai/BlogDetails4S";
+import BlogDetails5S from "./pages/Sciences_Ai/BlogDetails5S";
 import Warehouse from "./pages/Warehouse/Warehouse";
 import Blogs from "./pages/Blogs/Blogs";
 
@@ -125,7 +127,8 @@ const App = () => {
           <Route path="/sciences_ai/blogDetails1" element={<BlogDetails1S />} />
           <Route path="/sciences_ai/blogDetails2" element={<BlogDetails1S />} />
           <Route path="/sciences_ai/blogDetails3" element={<BlogDetails3S />} />
-
+          <Route path="/sciences_ai/blogDetails4" element={<BlogDetails4S />} />
+          <Route path="/sciences_ai/blogDetails5" element={<BlogDetails5S />} />
           {/* Sciences.ai end */}
 
 

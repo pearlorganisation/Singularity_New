@@ -37,7 +37,7 @@ const dummyData = [
     {
         category: `Technology`,
         title:
-            "Building a Modern Tax Ecosystem: Leveraging Blockchain Technology for a Streamlined Future",
+            "AI and Blockchain Revolutionizing Supply Chain Management",
         image:
             "https://images.unsplash.com/photo-1617529497471-9218633199c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
         profile: {
@@ -48,6 +48,22 @@ const dummyData = [
         desc: "The current tax reporting infrastructure suffers from several limitations due to its reliance on point-to-point integrations between various entities. Data transfer between banks, financial institutions, government agencies, and taxpayers is cumbersome and error-prone due to the use of multiple intermediaries. This increases the risk of data corruption or loss and makes it difficult to trace the origin and maintain the integrity of data throughout the reporting process. ",
 
         link: "/sciences_ai/blogDetails4",
+        date: "07-08-2024",
+    },
+    {
+        category: `Technology`,
+        title:
+            "Building a Modern Tax Ecosystem: Leveraging Blockchain Technology for a Streamlined Future",
+        image:
+            "https://images.unsplash.com/photo-1617529497471-9218633199c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        profile: {
+            img: blogAuthor.image,
+            name: blogAuthor.name,
+            email: blogAuthor.email,
+        },
+        desc: "The Problem: Challenges of Traditional Tax Reporting Infrastructure. The current tax reporting infrastructure suffers from several limitations due to its reliance on point-to-point integrations between various entities. These limitations include: Error-prone data exchange: Data transfer between banks, financial institutions, government agencies, and taxpayers is cumbersome and error-prone due to the use of multiple intermediaries. This increases the risk of data corruption or loss and makes it difficult to trace the origin and maintain the integrity of data throughout the reporting process. Additionally, the system struggles to handle high transaction volumes efficiently, especially during peak seasons.",
+
+        link: "/sciences_ai/blogDetails5",
         date: "07-08-2024",
     },
 ];
